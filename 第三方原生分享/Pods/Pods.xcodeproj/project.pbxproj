@@ -22,18 +22,21 @@
 		28E16244B9C8E98C9C5B06E260405A4A /* Pods-第三方原生分享Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-第三方原生分享Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		300DDAA8719F3DC90F15673270F1256F /* Pods-第三方原生分享-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-第三方原生分享-resources.sh"; sourceTree = "<group>"; };
 		30F4B78ED483BF584C32F9249CFA63B9 /* Pods-第三方原生分享UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-第三方原生分享UITests-resources.sh"; sourceTree = "<group>"; };
+		3A67B525ADA0AA1F620DD1332A280F80 /* WeiboSDK+Statistics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WeiboSDK+Statistics.h"; path = "libWeiboSDK/WeiboSDK+Statistics.h"; sourceTree = "<group>"; };
 		3C04336462A637B792EA951127FE5B32 /* libPods-第三方原生分享UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-第三方原生分享UITests.a"; path = "libPods-第三方原生分享UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EB9861A0A9545CD682154936E872B8 /* Pods-第三方原生分享Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-第三方原生分享Tests-dummy.m"; sourceTree = "<group>"; };
 		44F34526B9C5AD9018A6DFA34E169986 /* Pods-第三方原生分享-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-第三方原生分享-acknowledgements.plist"; sourceTree = "<group>"; };
-		4EDA7D4729938E21740FAB0B2846ED61 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.7.7/WXApiObject.h; sourceTree = "<group>"; };
+		646EEFD076F88175383FB81798728E08 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = libWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
+		647A5937A06ADC1DD32A4B45FA22D9F0 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = OpenSDK1.7.7/libWeChatSDK.a; sourceTree = "<group>"; };
+		68AAD38B666170591DF38FFF0FCCA5B1 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.7.7/WXApiObject.h; sourceTree = "<group>"; };
 		6AAEB228C92C4967C9E32C2B5EBED5EF /* Pods-第三方原生分享-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-第三方原生分享-frameworks.sh"; sourceTree = "<group>"; };
 		6DC432F38AF846531171E7D606CCBF06 /* Pods-第三方原生分享Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-第三方原生分享Tests-resources.sh"; sourceTree = "<group>"; };
+		7604F0343BE5C415B30C141315840022 /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboSDK.h; path = libWeiboSDK/WeiboSDK.h; sourceTree = "<group>"; };
 		7E331F15383ED71C46833602EE90FCDC /* Pods-第三方原生分享UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-第三方原生分享UITests-dummy.m"; sourceTree = "<group>"; };
-		835747FB8E7FDD474A87E9C7E33DB5E6 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.7.7/WXApi.h; sourceTree = "<group>"; };
-		88BBC081BB99EAA08AC7EFE93A2C41DB /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.7.7/WechatAuthSDK.h; sourceTree = "<group>"; };
-		90BEDCE0279CE7085CCE800BBF96508E /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = OpenSDK1.7.7/libWeChatSDK.a; sourceTree = "<group>"; };
+		80317B53B04112ECDD6522C343E69C4D /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.7.7/WechatAuthSDK.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F472E677BA51B77774FE72C901AE217 /* Pods-第三方原生分享UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-第三方原生分享UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC7D5076A668DA7D16C64E79A62D41D5 /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
 		ACE4E7E32BD2FD235E4DBC6E129C755E /* Pods-第三方原生分享Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-第三方原生分享Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BEFCC3DAD282E1565F894D813602A7BE /* Pods-第三方原生分享UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-第三方原生分享UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -41,10 +44,13 @@
 		D8B99B644D665F6779287EBE17384989 /* libPods-第三方原生分享.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-第三方原生分享.a"; path = "libPods-第三方原生分享.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CECB512972A6E1FF16CB6B5CF226E4 /* Pods-第三方原生分享UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-第三方原生分享UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E021BCCEF024FB02E2302FF2D6330F54 /* Pods-第三方原生分享UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-第三方原生分享UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E59DD52DAD3AADF8601A20190B9C6964 /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboToken.h"; path = "libWeiboSDK/WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
 		EB7588DD1B56335142A8DD2BF0AC3105 /* libPods-第三方原生分享Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-第三方原生分享Tests.a"; path = "libPods-第三方原生分享Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED58C40730AB23ACA742567F8EDE7ED0 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.7.7/WXApi.h; sourceTree = "<group>"; };
 		EE3D8B2DB9B148B5C2B164D9C3481E05 /* Pods-第三方原生分享UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-第三方原生分享UITests-frameworks.sh"; sourceTree = "<group>"; };
 		EF39F4BE004D369B400D7F438CD560CA /* Pods-第三方原生分享Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-第三方原生分享Tests-frameworks.sh"; sourceTree = "<group>"; };
 		F8EF9D634FE2CE10F0292ACC0EC5FA48 /* Pods-第三方原生分享Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-第三方原生分享Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FC24F204AE07D264A02308670A52067F /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = libWeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
 		FF9673239313A0043F03412C32243291 /* Pods-第三方原生分享-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-第三方原生分享-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,24 +82,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12C0837DF0ABE3BA45F71A521A976BCB /* Frameworks */ = {
+		0F2EAA31BF81305F5CEDD1589477193C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				90BEDCE0279CE7085CCE800BBF96508E /* libWeChatSDK.a */,
+				647A5937A06ADC1DD32A4B45FA22D9F0 /* libWeChatSDK.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1C0428BB4E369AD3AC119E64360B7336 /* WechatOpenSDK */ = {
-			isa = PBXGroup;
-			children = (
-				88BBC081BB99EAA08AC7EFE93A2C41DB /* WechatAuthSDK.h */,
-				835747FB8E7FDD474A87E9C7E33DB5E6 /* WXApi.h */,
-				4EDA7D4729938E21740FAB0B2846ED61 /* WXApiObject.h */,
-				12C0837DF0ABE3BA45F71A521A976BCB /* Frameworks */,
-			);
-			name = WechatOpenSDK;
-			path = WechatOpenSDK;
 			sourceTree = "<group>";
 		};
 		3759ECCB675FDC80E6279CC963A2E84F /* Pods-第三方原生分享UITests */ = {
@@ -109,6 +103,14 @@
 			);
 			name = "Pods-第三方原生分享UITests";
 			path = "Target Support Files/Pods-第三方原生分享UITests";
+			sourceTree = "<group>";
+		};
+		3D32DFCC19BD33F4BC2BE3A57A436A3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC24F204AE07D264A02308670A52067F /* WeiboSDK.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		6B76FE303D94A7498A6FEAB1DB2BBA67 /* Products */ = {
@@ -129,23 +131,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7ADA45F435BB210C822629C0D9B54295 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1C0428BB4E369AD3AC119E64360B7336 /* WechatOpenSDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7ADA45F435BB210C822629C0D9B54295 /* Pods */,
+				AD49DA8340894302ED59F13931DB8AB2 /* Pods */,
 				6B76FE303D94A7498A6FEAB1DB2BBA67 /* Products */,
 				A45CD36B7B0FF7D7DA3920F07548C968 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		984831D6B8B512DC5E72A1F1946FDA88 /* WeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				646EEFD076F88175383FB81798728E08 /* WBHttpRequest.h */,
+				E59DD52DAD3AADF8601A20190B9C6964 /* WBHttpRequest+WeiboToken.h */,
+				7604F0343BE5C415B30C141315840022 /* WeiboSDK.h */,
+				3A67B525ADA0AA1F620DD1332A280F80 /* WeiboSDK+Statistics.h */,
+				BE84BAFA642692ABC176F5DD3A268107 /* Frameworks */,
+				3D32DFCC19BD33F4BC2BE3A57A436A3C /* Resources */,
+			);
+			name = WeiboSDK;
+			path = WeiboSDK;
 			sourceTree = "<group>";
 		};
 		9BFE1BFFE98057A2B88334F80D874A47 /* Pods-第三方原生分享Tests */ = {
@@ -173,6 +181,27 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		AD49DA8340894302ED59F13931DB8AB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B53BFFD7E104C844D702BA1280A9A82A /* WechatOpenSDK */,
+				984831D6B8B512DC5E72A1F1946FDA88 /* WeiboSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B53BFFD7E104C844D702BA1280A9A82A /* WechatOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				80317B53B04112ECDD6522C343E69C4D /* WechatAuthSDK.h */,
+				ED58C40730AB23ACA742567F8EDE7ED0 /* WXApi.h */,
+				68AAD38B666170591DF38FFF0FCCA5B1 /* WXApiObject.h */,
+				0F2EAA31BF81305F5CEDD1589477193C /* Frameworks */,
+			);
+			name = WechatOpenSDK;
+			path = WechatOpenSDK;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +223,14 @@
 			);
 			name = "Pods-第三方原生分享";
 			path = "Target Support Files/Pods-第三方原生分享";
+			sourceTree = "<group>";
+		};
+		BE84BAFA642692ABC176F5DD3A268107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC7D5076A668DA7D16C64E79A62D41D5 /* libWeiboSDK.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

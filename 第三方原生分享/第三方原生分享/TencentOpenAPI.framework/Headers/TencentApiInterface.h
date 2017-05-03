@@ -71,7 +71,6 @@ TencentApiRetCode;
 
 /**
  * 是否可以处理拉起协议
- * \param url
  * \param delegate 指定的回调
  * \return 是否是腾讯API认识的消息类型
  */
@@ -79,7 +78,6 @@ TencentApiRetCode;
 
 /**
  * 处理应用拉起协议
- * \param url
  * \param delegate 指定的回调
  * \return 是否是腾讯API认识的消息类型
  */

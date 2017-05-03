@@ -13,8 +13,13 @@
 //微信api
 #import "WXApi.h"
 
+//微博
+#import <WeiboSDK.h>
+
 #define kQQAppId @"1234567891"
 #define kWechatAppId @"wx123456a12345d02"
+#define kSinaAppKey @"2045436852"
+#define kRedirectURI    @"https://www.sina.com"
 
 @interface ShareModel()
 
@@ -29,6 +34,10 @@
     
     //微信注册
     [WXApi registerApp:kWechatAppId];
+    
+    //微博注册
+    [WeiboSDK enableDebugMode:YES];
+    [WeiboSDK registerApp:kSinaAppKey];
 }
 
 //分享后的回调应用
@@ -37,7 +46,9 @@
         return [WXApi handleOpenURL:url delegate:delegate];
     }else if ([url.scheme isEqualToString:[NSString stringWithFormat:@"tencent%@",kQQAppId]]) {
         return [TencentOAuth HandleOpenURL:url];
-    }else {
+    }else if ([url.scheme isEqualToString:[NSString stringWithFormat:@"wb%@",kSinaAppKey]]) {
+        return [WeiboSDK handleOpenURL:url delegate:delegate];
+    }else{
         return YES;
     }
 }
@@ -75,11 +86,17 @@
             [self shareWechatWithType:type URLStr:urlStr Title:title description:description previewImageData:data];
             break;
         }
+        case ShareTypeSina:{
+            [self shareSinaWithURLStr:urlStr Title:title description:description previewImageData:data];
+            break;
+        }
         default:
             break;
     }
 }
 
+#pragma mark 
+#pragma mark 分享至qq或qq空间
 +(void)shareTencentWithType:(ShareType)type URLStr:(NSString *)urlStr Title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data{
     
     //创建分享新闻实例
@@ -104,8 +121,10 @@
     NSLog(@"QQApiSendResultCode %d",sentQQ);
 }
 
-//分享微信，scene为场景 0:会话  1:朋友圈 利用此特性构造type
+#pragma mark
+#pragma mark 分享至微信或微信朋友圈，scene为场景 0:会话  1:朋友圈 利用此特性构造type
 +(void)shareWechatWithType:(ShareType)type URLStr:(NSString *)urlStr Title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data{
+    //构造消息实例
     WXMediaMessage *message = [WXMediaMessage message];
     message.title = title;
     message.description = description;
@@ -113,16 +132,47 @@
     
     WXWebpageObject *ext = [WXWebpageObject object];
     ext.webpageUrl = urlStr;
-    
     message.mediaObject = ext;
     
+    //构造分享实例（包含消息、消息类型、场景）
     SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
     req.bText = NO;
     req.message = message;
-    req.scene = type;
+    req.scene = type; //scene为场景 0:会话  1:朋友圈 利用此特性构造type
     
+    //发送
     [WXApi sendReq:req];
 
+}
+
+#pragma mark 
+#pragma mark 分享至新浪微博
++(void)shareSinaWithURLStr:(NSString *)urlStr Title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data{
+    
+    //授权信息
+    WBAuthorizeRequest *authRequest = [WBAuthorizeRequest request];
+    authRequest.redirectURI = kRedirectURI;
+    authRequest.scope = @"all";
+    
+    //构建消息实例
+    WBMessageObject *message = [WBMessageObject message];
+//    message.text = title;
+//    WBImageObject *image = [WBImageObject object];
+//    image.imageData = data;
+//    message.imageObject = image;
+    
+    WBWebpageObject *webpage = [WBWebpageObject object];
+    webpage.objectID = @"identifier1";
+    webpage.title = title;
+    webpage.description = description;
+    webpage.thumbnailData = data;
+    webpage.webpageUrl = urlStr;
+    message.mediaObject = webpage;
+    
+    WBSendMessageToWeiboRequest *request = [WBSendMessageToWeiboRequest requestWithMessage:message authInfo:authRequest access_token:nil];
+    //    request.shouldOpenWeiboAppInstallPageIfNotInstalled = NO;
+    [WeiboSDK sendRequest:request];
+    
 }
 
 
@@ -141,5 +191,9 @@
     return [WXApi isWXAppInstalled];
 }
 
+//是否安装了微博
++(BOOL)isSinaInstalled{
+    return [WeiboSDK isWeiboAppInstalled];
+}
 
 @end

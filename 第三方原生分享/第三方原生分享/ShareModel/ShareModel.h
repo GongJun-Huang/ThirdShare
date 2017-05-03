@@ -30,4 +30,6 @@ typedef NS_ENUM(NSUInteger, ShareType)
 +(BOOL)isQZoneInstalled;
 //是否安装了微信
 +(BOOL)isWechatInstalled;
+//是否安装了微博
++(BOOL)isSinaInstalled;
 @end

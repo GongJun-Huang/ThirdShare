@@ -46,6 +46,13 @@
     timeLine.backgroundColor = [UIColor redColor];
     [timeLine addTarget:self action:@selector(timeLineAct) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:timeLine];
+    
+    UIButton *sina = [[UIButton alloc] initWithFrame:CGRectMake(150, 390, 100, 50)];
+    [sina setTitle:@"分享微博" forState:UIControlStateNormal];
+    [sina setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    sina.backgroundColor = [UIColor redColor];
+    [sina addTarget:self action:@selector(sinaAct) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sina];
 }
 
 -(void)qqAct{
@@ -62,6 +69,10 @@
 
 -(void)timeLineAct{
     [ShareModel shareWithType:ShareTypeWechatTimeLine];
+}
+
+-(void)sinaAct{
+    [ShareModel shareWithType:ShareTypeSina];
 }
 
 - (void)didReceiveMemoryWarning {

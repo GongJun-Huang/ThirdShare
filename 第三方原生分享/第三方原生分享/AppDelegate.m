@@ -12,6 +12,9 @@
 //微信api
 #import "WXApi.h"
 
+//微博
+#import <WeiboSDK.h>
+
 @interface AppDelegate ()<WXApiDelegate>
 
 @end
@@ -63,6 +66,23 @@
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
     
     return [ShareModel handleOpenURL:url delegate:self];
+}
+
+#pragma mark 微博需要实现系统的这个回调方法
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [ShareModel handleOpenURL:url delegate:self];
+}
+
+
+#pragma mark 两个微博的回调，要实现
+- (void)didReceiveWeiboRequest:(WBBaseRequest *)request
+{
+    
+}
+
+- (void)didReceiveWeiboResponse:(WBBaseResponse *)response
+{
+    
 }
 
 #pragma mark 微信的回调
